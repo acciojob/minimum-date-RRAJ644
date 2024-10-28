@@ -1,5 +1,18 @@
 function minDate(dates) {
   //write you code here
+	let min = Infinity
+	let minDate=""
+	
+	for (let index = 0; index < dates.length; index++) {
+
+		const date = new Date(dates[index])
+
+		if(date < min){
+			min = date
+			minDate = dates[index]
+		}
+	}
+	return minDate
 }
 
 // Do not change the code
